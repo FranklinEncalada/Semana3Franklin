@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana3Franklin.pagina">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Grid>
+
+                    <Image Source="UISRAEL.jpg">
+
+                    </Image>
+                </Grid>
+
+
+                <StackLayout Margin="10,10,10,10" Padding="10,10,10,10" Background="#fff">
+
+                    <Label Text="PRIMER PARCIAL" FontSize="25" HorizontalOptions="Center" TextColor="Brown" />
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition/>
+
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="NOTA SIGUIMIENTO 1" 
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                  />
+                        <Entry  Grid.Column="1" x:Name="txtSeguimiento"  Keyboard="Numeric"/>
+                        <Label Grid.Row="1" Text="EXAMEN 1"
+                        VerticalOptions="Center"
+                   VerticalTextAlignment="Center"/>
+                        <Entry Grid.Row="1"  Grid.Column="1" x:Name="txtExamen"  Keyboard="Numeric"/>
+
+
+                    </Grid>
+
+                </StackLayout>
+
+                <StackLayout Margin="10,10,10,10" Padding="10,10,10,10" Background="#fff">
+
+                    <Label Text="SEGUNDO PARCIAL" FontSize="25" HorizontalOptions="Center" TextColor="Brown"/>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition/>
+
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Text="NOTA SEGUIMIENTO 2" 
+                   VerticalOptions="Center"
+                   VerticalTextAlignment="Center"
+                  />
+                        <Entry  Grid.Column="1" x:Name="txtSeguimiento2"  Keyboard="Numeric"/>
+                        <Label Grid.Row="1" Text="EXAMEN 2"
+                        VerticalOptions="Center"
+                   VerticalTextAlignment="Center"/>
+                        <Entry Grid.Row="1"  Grid.Column="1" x:Name="txtExamen2"  Keyboard="Numeric"/>
+
+
+                    </Grid>
+
+                </StackLayout>
+
+                
+
+                <Button x:Name="btnCalcular" Text="CALCULAR" Clicked="btnCalcular_Clicked"/>
+
+                <StackLayout Margin="10,10,10,10" Padding="10,10,10,10" Background="#fff">
+
+                    <Label Text="NOTA FINAL" HorizontalOptions="Center" TextColor="Brown"/>
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+
+                        </Grid.RowDefinitions >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0"  Text="NOTA PARCIAL 1" VerticalOptions="Center" VerticalTextAlignment="Center" TextColor="#000"/>
+                        <Label Grid.Column="1" Grid.Row="0"  x:Name="lblNotaParcial" VerticalOptions="Center" VerticalTextAlignment="Center" TextColor="#000"/>
+
+                        <Label Grid.Column="0" Grid.Row="1"  Text="NOTA PARCIAL 2" VerticalOptions="Center" VerticalTextAlignment="Center" TextColor="#000"/>
+                        <Label Grid.Column="1" Grid.Row="1"   x:Name="lblNotaParcial2" VerticalOptions="Center" VerticalTextAlignment="Center" TextColor="#000"/>
+
+                        <Label Grid.Column="0" Grid.Row="2" Text="NOTA" VerticalOptions="Center" VerticalTextAlignment="Center" TextColor="#000" />
+                        <Label  Grid.Column="1"  Grid.Row="2" x:Name="lblNota"  VerticalOptions="Center"  VerticalTextAlignment="Center" TextColor="#000"/>
+
+                    </Grid>
+
+                </StackLayout>
+
+
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
